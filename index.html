@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1,minimum-scale=1" name="viewport">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <link href="<%= htmlWebpackPlugin.files.publicPath %>static/img/bhoj_logo.png" rel="icon" sizes="32x32" type="image/png">
+  <link href="<%= htmlWebpackPlugin.files.publicPath %>static/img/bhoj_logo.png" rel="icon" sizes="16x16" type="image/png">
+  <!--[if IE]><link rel="shortcut icon" href="<%= htmlWebpackPlugin.files.publicPath %>static/img/bhoj_logo.png"><![endif]-->
+  <% for (var chunk of webpack.chunks) {
+  for (var file of chunk.files) {
+  if (file.match(/\.(js|css)$/)) { %>
+  <link as="<%= file.match(/\.css$/)?'style':'script' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" rel="<%= chunk.initial?'preload':'prefetch' %>"><% }}} %>
+  <script src="https://apis.google.com/js/api:client.js"></script>
+  <script src="https://unpkg.com/vue-meta@1.5.8/lib/vue-meta.min.js"></script>
+</head>
+<body>
+<div id="mybhojapp"></div>
+<noscript>
+  Please enable javascript ...
+</noscript>
+<!-- Todo: only include in production -->
+<%= htmlWebpackPlugin.options.serviceWorkerLoader %>
+<!-- built files will be auto injected -->
+</body>
+</html>

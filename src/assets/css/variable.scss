@@ -1,0 +1,48 @@
+$background-white: #ffffff;
+$background-black: #000000;
+$background-dark-black: #333333;
+$commn-background: #121618;
+$urlPath: '/';
+/* common-title section css Start */
+
+.common-title {
+  text-align: center;
+
+  h3 {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.26;
+    letter-spacing: normal;
+    text-align: center;
+    color: $background-white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+
+    a {
+      color: #121618;
+      text-decoration: none;
+      transition: 0.3s;
+      background-color: #f7922f;
+      height: 55px;
+      padding: 0 10px;
+      border-radius: 5px;
+      margin-left: 15px;
+      align-items: center;
+      display: flex;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  .common-title h3 {
+    font-size: 26px;
+  }
+
+}

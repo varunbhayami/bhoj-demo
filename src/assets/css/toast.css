@@ -1,0 +1,33 @@
+.notifications {
+    position: fixed;
+    z-index: 5000;
+    width: 500px !important;
+    left: calc(50% - 250px) !important;
+}
+.custom-vue-notify .notification-wrapper {
+    display: block;
+    font-size: 17px;
+    color: white;
+    margin: 15px;
+}
+
+.custom-vue-notify .warn {
+    padding: 10px;
+    color: #856404;
+    background-color: #f9eabb;
+    border: 1px solid #ded2ac;
+}
+
+.custom-vue-notify .error {
+    padding: 10px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.custom-vue-notify .success {
+    padding: 10px;
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #bedec5;
+}

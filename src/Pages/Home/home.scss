@@ -1,0 +1,497 @@
+@import "./../../assets/css/variable";
+
+.delivered-main {
+    float: left;
+    width: 100%;
+    background: $background-white;
+    position: relative;
+    padding: 10px 0 0;
+    &:before {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 0;
+        background: url($urlPath + 'static/img/right-banner.jpg') no-repeat;
+        height: 100%;
+        width: 50%;
+        background-size: 100%;
+    }
+    &:after{
+        position: absolute;
+        background: url($urlPath + 'static/img/border.png') no-repeat;
+        content: "";
+        bottom: 0px;
+        height: 13px;
+        width: 100%;
+        background-size: 100% 100%;
+    }
+    .navbar {
+        .navbar-brand{
+            img{
+                width: 80%;
+            }
+        }
+        .navbar-collapse {
+            .navbar-nav {
+                .navbar-nav {
+                    .account-img{
+                        margin-right: 8px;
+                        width: 15px;
+                        vertical-align: baseline;
+                    }
+                    .nav-item {
+                        .nav-link {
+                            font-size: 14px;
+                            font-style: normal;
+                            font-stretch: normal;
+                            letter-spacing: normal;
+                            text-align: center;
+                            color: $background-black;
+                            font-weight: 500;
+                            text-transform: capitalize;
+                            line-height: 30px;
+                        }
+                        &:last-child {
+                            .nav-link {
+                                width: 119px;
+                                height: 46px;
+                                border-radius: 5px;
+                                background-color: $background-black;
+                                color: #fff;
+                                margin-left: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h1 {
+        font-size: 1.55rem;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.26;
+        letter-spacing: normal;
+        text-align: center;
+        color: #000000;
+        padding-top: 75px;
+        text-transform: uppercase;
+    }
+    .food-delivered{
+        margin: 50px 0;
+        a{
+            text-decoration: none;
+            outline: none;
+            span{
+                width: 107px;
+                height: 107px;
+                background-color: $background-white;
+                box-shadow: 0px 10px 35px 0 rgba(179, 128, 77, 0.23);
+                display: block;
+                border-radius: 50%;
+                margin: 0 auto;
+                text-align: center;
+                img{
+                    padding: 26px 0;
+                }
+            }
+            h2{
+                font-size: 15px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.79;
+                letter-spacing: normal;
+                text-align: center;
+                color: $background-dark-black;
+                padding-top: 20px;
+                width: 140px;
+                margin: auto;
+            }
+        }
+    }
+}
+
+.order-delivered{
+    float: left;
+    width: 100%;
+    background: $commn-background;
+    padding: 50px 0;
+    position: relative;
+    &:before{
+        position: absolute;
+        background: url($urlPath + "static/img/leaf.png") no-repeat;
+        content: '';
+        width: 318px;
+        height: 205px;
+        top: 14px;
+        left: 0;
+    }
+    &:after{
+        position: absolute;
+        background: url($urlPath + "static/img/spoon.png") no-repeat;
+        content: '';
+        width: 322px;
+        height: 131px;
+        top: 25px;
+        right: 40px;
+    }
+    .order-type{
+        text-align: center;
+        padding-top: 50px;
+        h4{
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.45;
+            letter-spacing: normal;
+            text-align: center;
+            color: $background-white;
+            padding-top: 50px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.restaurant-main{
+    float: left;
+    width: 100%;
+    background: url($urlPath + "static/img/restaurant.jpg") no-repeat;
+    padding: 50px 0 90px;
+    position: relative;
+    background-size: cover;
+    &:after{
+        position: absolute;
+        border-style: solid;
+        border-color: transparent $background-white transparent transparent;
+        border-width: 80px calc(100vw - 15px) 0 0;
+        content: '';
+        bottom: 0;
+        width: 0;
+        height: 0;
+        left: 0;
+    }
+    .order-type{
+        text-align: center;
+        padding-top: 50px;
+        span{
+            width: 130px;
+            height: 130px;
+            background-color: #ffffff;
+            box-shadow: 0px 10px 65px 0 rgba(0, 0, 0, 0.42);
+            margin: auto;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+
+            }
+        }
+        h4{
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.45;
+            letter-spacing: normal;
+            text-align: center;
+            color: $background-white;
+            padding-top: 50px;
+        }
+    }
+}
+
+.app-store{
+    float: left;
+    width: 100%;
+    background: url($urlPath + "static/img/app-bg.png") no-repeat;
+    position: relative;
+    padding-bottom: 50px;
+    background-size: cover;
+    h6{
+        font-size: 26px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.37;
+        letter-spacing: normal;
+        text-align: left;
+        width: 70%;
+        text-transform: uppercase;
+        color: $background-black;
+    }
+    p{
+        font-size: 16px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.77;
+        letter-spacing: normal;
+        text-align: left;
+        color: $background-black;
+        margin-bottom: 41px;
+        width: 90%;
+        span{
+            display: block;
+            font-weight: 500;
+            color: #f79130;
+        }
+    }
+    a{
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .delivered-main{
+        &:after{
+            background-size: auto;
+        }
+        .navbar{
+            padding: 0;
+            .navbar-collapse{
+                .navbar-nav{
+                    display: inline-block;
+                    .navbar-nav{
+                        .nav-item{
+                            float: left;
+                            .nav-link{
+                                float: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:before{
+            display: none;
+        }
+        h1{
+            padding-top: 30px;
+            font-size: 1.3rem;
+        }
+        .food-delivered a h2{
+            width: 100%;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+
+    .order-delivered{
+        &:after{
+            top: auto;
+            bottom: 15px;
+        }
+        .order-type{
+            padding-top: 20px;
+            h4{
+                padding: 20px 0;
+                margin: 0;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .restaurant-main{
+        &:after{
+            display: none;
+        }
+        .order-type{
+            padding-top: 20px;
+            h4{
+                padding: 20px 0;
+                margin: 0;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .app-store{
+        padding-top: 50px;
+        h6{
+            width: 100%;
+            font-size: 26px;
+        }
+        p{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        a{
+            img{
+                width: 49%;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+    .delivered-main{
+        &:after{
+            background-size: auto;
+        }
+        .navbar{
+            padding: 0;
+            .navbar-collapse{
+                .navbar-nav{
+                    display: inline-block;
+                    .navbar-nav{
+                        .nav-item{
+                            float: left;
+                            .nav-link{
+                                float: left;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &:before{
+            display: none;
+        }
+        h1{
+            padding-top: 30px;
+            font-size: 1.3rem;
+        }
+        .food-delivered a h2{
+            width: 100%;
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+
+    .order-delivered{
+        &:after{
+            right: 20px;
+            background-size: 70%;
+            background-position: right;
+        }
+        &:before{
+            background-size: 70%;
+            background-position: left;
+            top: 0;
+        }
+        .order-type{
+            padding-top: 30px;
+            h4{
+                font-size: 20px;
+                padding: 20px 0;
+            }
+        }
+    }
+
+    .restaurant-main{
+        &:after{
+            right: 20px;
+            background-size: 70%;
+            background-position: right;
+        }
+        &:before{
+            background-size: 70%;
+            background-position: left;
+            top: 0;
+        }
+        .order-type{
+            padding-top: 30px;
+            h4{
+                font-size: 20px;
+                padding: 20px 0;
+            }
+        }
+    }
+
+    .app-store{
+        padding: 40px 0;
+        h6{
+            width: 100%;
+        }
+        a{
+            display: inline-block;
+            margin-bottom: 30px;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    .navbar-nav{
+        display: -webkit-box;
+    }
+
+    .delivered-main{
+        &:after{
+            background-size: auto;
+        }
+        h1{
+            padding-top: 14px;
+            font-size: 1.2rem;
+        }
+        .food-delivered{
+            margin: 20px 0;
+            a h2{
+                font-size: 15px;
+                line-height: 20px;
+                padding-top: 10px;
+                width: 100%;
+                margin: auto;
+            }
+        }
+    }
+
+    .order-delivered{
+        .order-type{
+            padding-top: 40px;
+            h4{
+                padding: 20px 0;
+            }
+        }
+    }
+
+    .restaurant-main{
+        .order-type{
+            padding-top: 40px;
+            h4{
+                padding: 20px 0;
+            }
+        }
+    }
+
+    .app-store{
+        h6{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+        a{
+            margin-right: 0;
+            img{
+                width: 49%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px){
+
+    .delivered-main h1{
+        font-size: 1.5rem;
+        padding-top: 10px;
+    }
+
+    .delivered-main .food-delivered{
+        margin: 20px 0;
+    }
+
+    .delivered-main .food-delivered a h2{
+        font-size: 16px;
+    }
+
+}

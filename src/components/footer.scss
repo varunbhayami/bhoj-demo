@@ -1,0 +1,100 @@
+@import "./../assets/css/variable";
+
+.footer-main{
+    float: left;
+    width: 100%;
+    background: #f7922f;
+    padding: 40px 0 0;
+    h6{
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 2px;
+        text-align: left;
+        color: $background-white;
+        &.get-title{
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 25px;
+        }
+    }
+    a{
+        text-transform: capitalize;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 2.5;
+        letter-spacing: normal;
+        text-align: left;
+        color: $background-white;
+        display: block;
+        text-decoration: none;
+    }
+    .sub-footer{
+        border-top: 1px solid #eef1f2;
+        border-top: 1px solid rgba(238, 241, 242, 0.57);
+        margin-top: 30px;
+        padding: 20px 0;
+        p{
+            font-size: 13px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 2.2;
+            letter-spacing: 2px;
+            color: #ffffff;
+            margin: 0;
+        }
+        .social-icon{
+            float: right;
+            a{
+                display: inline-block;
+                margin: 0 3px;
+                width: 45px;
+                height: 45px;
+                text-align: center;
+                &:hover{
+                    background-color: #1ea1f3;
+                    /*box-shadow: 0px 27px 38px 0 rgba(119, 209, 245, 0.35);*/
+                    border-radius: 50%;
+                }
+                img{
+                    width: 25px;
+                    padding: 11px 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .footer-main{
+        h6{
+            font-size: 14px;
+        }
+        a{
+            font-size: 12px;
+        }
+        .sub-footer{
+            p{
+                text-align: center;
+            }
+            .social-icon{
+                float: none;
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+
+    .footer-main a{
+        font-size: 14px;
+    }
+
+}
